@@ -1,0 +1,7 @@
+name = "StoppingTutorials"
+uuid = "b1001b4c-0346-4072-8a18-8b9eb10a72ff"
+authors = ["Tangi Migot tangi.migot@gmail.com"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
