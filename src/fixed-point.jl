@@ -11,7 +11,7 @@
 # Note that in this case the projection on A and the projection on B are trivial
 
 # Takeaway: the 2nd scenario illustrates a situation where the algorithm stalls
-# as it reached a personal success. (optimal_sub_pb is true)
+# as it reached a personal success, i.e. `optimal_sub_pb` is true.
 
 using ADNLPModels, LinearAlgebra, NLPModels, Stopping, Test
 
@@ -55,12 +55,13 @@ printstyled("1st scenario:\n")
 #Prepare the Stopping
 x0 = [0.0, 5.0]
 state = NLPAtX(x0)
-#Recall that for the optimality_check function x is the pb and y is the state
-#Here we take the infinite norm of the residual.
+
+# Recall that for the optimality_check function x is the pb and y is the state
+# Here we take the infinite norm of the residual.
+
 stop = NLPStopping(nlp, state, optimality_check = (x,y) -> norm(y.cx, Inf))
 
 AlternatingDirections(stop)
-status(stop)
 @test status(stop) == :Optimal
 
 # 2nd scenario: the user gives an irrealistic optimality condition
@@ -69,7 +70,8 @@ reinit!(stop, rstate = true, x = x0)
 stop.meta.optimality_check = (x, y) -> norm(y.cx, Inf) + 0.5
 
 AlternatingDirections(stop)
-#In this scenario, the algorithm stops because it attains a fixed point
-#Hence, status is :SubOptimal.
-status(stop)
+
+# In this scenario, the algorithm stops because it attains a fixed point
+# Hence, status is :SubOptimal.
+
 @test status(stop) == :SubOptimal

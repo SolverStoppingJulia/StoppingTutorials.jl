@@ -9,6 +9,7 @@ files = [
   "The overfitting problem (handle unrelated stopping criteria)"=>"overfitting.jl",
   "Checkpointing"=>"checkpointing.jl",
   "Mixed-algorithms, a ListofStates tutorial"=>"gradient-lbfgs.jl",
+  "Use a buffer"=>"buffer.jl",
 ]
 
 Sys.rm(notebooks_dir;recursive=true,force=true)
