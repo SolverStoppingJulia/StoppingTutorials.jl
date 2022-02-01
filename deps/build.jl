@@ -6,6 +6,7 @@ notebooks_dir = joinpath(@__DIR__,"..","notebooks")
 
 files = [
   "The overfitting problem (handle unrelated stopping criteria)"=>"overfitting.jl",
+  "Checkpointing"=>"checkpointing.jl",
 ]
 
 Sys.rm(notebooks_dir;recursive=true,force=true)
