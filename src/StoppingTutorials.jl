@@ -1,6 +1,6 @@
 module StoppingTutorials
 
-deps_jl = joinpath(@__DIR__, "deps", "deps.jl")
+deps_jl = joinpath(@__DIR__,"..", "deps", "deps.jl")
 
 if !isfile(deps_jl)
   s = """

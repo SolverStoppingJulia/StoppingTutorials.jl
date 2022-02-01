@@ -1,7 +1,7 @@
 using Literate
 using Printf
 
-repo_src = joinpath(@__DIR__,"..","..","src")
+repo_src = joinpath(@__DIR__,"..","src")
 notebooks_dir = joinpath(@__DIR__,"..","notebooks")
 
 files = [
