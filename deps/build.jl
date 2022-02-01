@@ -5,7 +5,7 @@ repo_src = joinpath(@__DIR__,"..","src")
 notebooks_dir = joinpath(@__DIR__,"..","notebooks")
 
 files = [
-  "The overfitting problem: Handle unrelated stopping criteria"=>"overfitting.jl",
+  "The overfitting problem (handle unrelated stopping criteria)"=>"overfitting.jl",
 ]
 
 Sys.rm(notebooks_dir;recursive=true,force=true)

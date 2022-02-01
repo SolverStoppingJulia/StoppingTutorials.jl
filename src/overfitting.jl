@@ -1,5 +1,3 @@
-# # Handle unrelated stopping criteria
-
 # In this tutorial, we present the use of Stopping to specify an "unrelated"
 # stopping criterion. A typical example is the so-called case of "overfitting", 
 # where the optimization process is actually designed to approximate another problem.
