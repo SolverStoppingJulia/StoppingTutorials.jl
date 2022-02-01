@@ -61,9 +61,7 @@ makedocs(;
         canonical="https://tmigot.github.io/StoppingTutorials.jl",
         assets=String[],
     ),
-    pages=[
-        "Home" => "index.md",
-    ],
+    pages=pages
 )
 
 deploydocs(;
