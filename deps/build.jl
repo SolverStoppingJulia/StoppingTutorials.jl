@@ -5,6 +5,7 @@ repo_src = joinpath(@__DIR__,"..","src")
 notebooks_dir = joinpath(@__DIR__,"..","notebooks")
 
 files = [
+  "Example of a fixed point algorithm"=>"fixed-point.jl",
   "The overfitting problem (handle unrelated stopping criteria)"=>"overfitting.jl",
   "Checkpointing"=>"checkpointing.jl",
 ]
