@@ -21,7 +21,6 @@ function AlternatingDirections(stp)
 
  xk = stp.current_state.x
  OK = update_and_start!(stp, cx = cons(stp.pb, x0))
- @show OK, xk
 
  while !OK
 
@@ -37,7 +36,6 @@ function AlternatingDirections(stp)
   OK = update_and_stop!(stp, x = xk2, cx = cons(stp.pb, xk2))
 
   xk = xk2
-  @show OK, xk
  end
 
  return stp
@@ -62,7 +60,7 @@ state = NLPAtX(x0)
 stop = NLPStopping(nlp, state, optimality_check = (x,y) -> norm(y.cx, Inf))
 
 AlternatingDirections(stop)
-@show status(stop)
+status(stop)
 @test status(stop) == :Optimal
 
 # 2nd scenario: the user gives an irrealistic optimality condition
@@ -73,5 +71,5 @@ stop.meta.optimality_check = (x, y) -> norm(y.cx, Inf) + 0.5
 AlternatingDirections(stop)
 #In this scenario, the algorithm stops because it attains a fixed point
 #Hence, status is :SubOptimal.
-@show status(stop)
+status(stop)
 @test status(stop) == :SubOptimal

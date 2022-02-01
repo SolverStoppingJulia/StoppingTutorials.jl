@@ -8,6 +8,7 @@ files = [
   "Example of a fixed point algorithm"=>"fixed-point.jl",
   "The overfitting problem (handle unrelated stopping criteria)"=>"overfitting.jl",
   "Checkpointing"=>"checkpointing.jl",
+  "Mixed-algorithms, a ListofStates tutorial"=>"gradient-lbfgs.jl",
 ]
 
 Sys.rm(notebooks_dir;recursive=true,force=true)
