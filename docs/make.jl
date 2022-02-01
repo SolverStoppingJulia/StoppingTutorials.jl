@@ -3,6 +3,13 @@ using Documenter
 using Printf
 using Literate
 
+assets_src = joinpath(@__DIR__,"..","assets")
+assets_dst = joinpath(@__DIR__,"src","assets")
+
+Sys.rm(assets_dst;recursive=true,force=true)
+
+Sys.cp(assets_src,assets_dst)
+
 repo_src = joinpath(@__DIR__,"..","src")
 pages_dir = joinpath(@__DIR__,"src","pages")
 notebooks_dir = joinpath(@__DIR__,"src","notebooks")
