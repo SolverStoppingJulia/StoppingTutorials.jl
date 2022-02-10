@@ -54,17 +54,17 @@ DocMeta.setdocmeta!(StoppingTutorials, :DocTestSetup, :(using StoppingTutorials)
 makedocs(;
     modules=[StoppingTutorials],
     authors="Tangi Migot tangi.migot@gmail.com",
-    repo="https://github.com/tmigot/StoppingTutorials.jl/blob/{commit}{path}#{line}",
+    repo="https://github.com/SolverStoppingJulia/StoppingTutorials.jl/blob/{commit}{path}#{line}",
     sitename="StoppingTutorials.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://tmigot.github.io/StoppingTutorials.jl",
+        canonical="https://SolverStoppingJulia.github.io/StoppingTutorials.jl",
         assets=String[],
     ),
     pages=pages
 )
 
 deploydocs(;
-    repo="github.com/tmigot/StoppingTutorials.jl",
+    repo="github.com/SolverStoppingJulia/StoppingTutorials.jl",
     devbranch="main",
 )

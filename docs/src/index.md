@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the tutorial pages of the [Stopping.jl](https://github.com/tmigot/Stopping.jl) project.
+Welcome to the tutorial pages of the [Stopping.jl](https://github.com/SolverStoppingJulia/Stopping.jl) project.
 
 ## Contents
 
@@ -21,7 +21,7 @@ There are different ways to use the tutorials:
 
 Clone the repository
 ```
-$ git clone https://github.com/tmigot/StoppingTutorials.git
+$ git clone https://github.com/SolverStoppingJulia/StoppingTutorials.git
 ```
 
 Move into the folder and open a Julia REPL setting the current folder as the project environment. 
