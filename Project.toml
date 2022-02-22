@@ -15,6 +15,9 @@ Stopping = "c4fe5a9e-e7fb-5c3d-89d5-7f405ab2214f"
 
 [compat]
 IJulia = "1"
+Literate = "2"
+DataFrames = "1"
+Plots = "1"
 Stopping = "0.4"
 julia = "1.6"
 
