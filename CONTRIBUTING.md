@@ -47,7 +47,7 @@ By making a contribution to this project, I certify that:
 
 ## Introduction
 
-This repository contains the sources to automatically create a tutorial driven documentation for [Stopping](https://github.com/vepiteski/Stopping.jl) project.
+This repository contains the sources to automatically create a tutorial driven documentation for [Stopping](https://github.com/SolverStoppingJulia/Stopping.jl) project.
 
 You can visit the latest stable version of this documentation [here](https://SolverStoppingJulia.github.io/StoppingTutorials/stable/).
 
